@@ -28,6 +28,6 @@ export async function POST(req: NextRequest) {
 
 
   return NextResponse.redirect(
-    new URL("https://7450-119-235-221-113.ngrok-free.app/", req.url)
+    new URL("http://localhost:3000", req.url)
   );
 }

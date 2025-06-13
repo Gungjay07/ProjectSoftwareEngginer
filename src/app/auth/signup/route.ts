@@ -29,6 +29,6 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.redirect(
-    new URL("https://7450-119-235-221-113.ngrok-free.app/login", req.url), 302
+    new URL("http://localhost:3000login", req.url), 302
   );
 }
