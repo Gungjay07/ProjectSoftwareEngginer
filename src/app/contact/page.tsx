@@ -8,7 +8,7 @@ import { IconPhoneCall, IconMessageCircle } from "@tabler/icons-react"; // Icons
 // Re-using components from your login/contact form, adjust paths if needed
 import { Label } from "@/app/components/ui/label"; // Assuming @/app alias for src/app
 import { Input } from "../components/ui/input"; // Assuming components/ui/input relative to app/contact
-import { cn } from "../lib/utils"; // Assuming lib/utils relative to app/contact
+import { cn } from "../../lib/utils"; // Assuming lib/utils relative to app/contact
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
