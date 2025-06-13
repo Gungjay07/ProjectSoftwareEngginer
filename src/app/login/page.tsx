@@ -8,14 +8,10 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 
 
 export default function Login() {
-
   const handleLoginGoogle = async () => {
-    const suppabase = createClientComponentClient();
-    await suppabase.auth.signInWithOAuth({
+    const supabase = createClientComponentClient();
+    await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: {
-        redirectTo: `https://5353-2a09-bac1-34c0-18-00-da-62.ngrok-free.app`,
-      },
     });  }
  
  

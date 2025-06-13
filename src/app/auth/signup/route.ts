@@ -29,7 +29,6 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.redirect(
-    new URL("https://5353-2a09-bac1-34c0-18-00-da-62.ngrok-free.app/login", req.url),
-    302
+    new URL("https://7450-119-235-221-113.ngrok-free.app/login", req.url), 302
   );
 }

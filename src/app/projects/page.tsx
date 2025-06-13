@@ -8,11 +8,13 @@ const allCategories = ["All", "Finance", "AI", "Health", "Education"];
 const projects = [
   {
     slug: "open-finance-tracker",
-    author: "Agung Praditya",
+    author: "Frillian Su",
     date: "20 May 2025",
-    title: "Open Finance Tracker",
-    description: "A budgeting app that helps users manage expenses easily.",
-    image: "/logoBangunDev.png",
+    title:
+      "Bantu Frillian untuk membangun Aplikasi Belajar Interaktif: “PAUD Pintar”",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat, quisquam, officia ad esse inventore a voluptatibus dignissimos nulla similique optio ut dolor molestias provident impedit odio deserunt commodi incidunt excepturi natus odit aut minus vel. Dolorem error libero recusandae deleniti explicabo eveniet voluptatem, in obcaecati dolores iste. Dignissimos, quia.",
+    image: "/projectFrill.png",
     authorAvatar: "/logoBangunDev.png",
     raised: 4200,
     goal: 10000,
@@ -23,12 +25,39 @@ const projects = [
     author: "Agung Praditya",
     date: "19 May 2025",
     title: "AI Code Review Tool",
-    description: "An AI tool that reviews code and provides best practices.",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat, quisquam, officia ad esse inventore a voluptatibus dignissimos nulla similique optio ut dolor molestias provident impedit odio deserunt commodi incidunt excepturi natus odit aut minus vel. Dolorem error libero recusandae deleniti explicabo eveniet voluptatem, in obcaecati dolores iste. Dign l;wmdoodownodwmqdqd qw dwqndpqwpwmdqw dwodnwqod",
     image: "/logoBangunDev.png",
     authorAvatar: "/manu.png",
     raised: 9600,
     goal: 15000,
     category: "AI",
+  },
+  {
+    slug: "ai-code-review",
+    author: "Yazid Maulana Rizky",
+    date: "19 May 2025",
+    title: "Teman Dalam Saku: Aplikasi Kesehatan Mental untuk Mahasiswa",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat, quisquam, officia ad esse inventore a voluptatibus dignissimos nulla similique optio ut dolor molestias provident impedit odio deserunt commodi incidunt excepturi natus odit aut minus vel. Dolorem error libero recusandae deleniti explicabo eveniet voluptatem, in obcaecati dolores iste. Dignissimos, quia.",
+    image: "/teman-dalam-saku.png",
+    authorAvatar: "/manu.png",
+    raised: 9600,
+    goal: 15000,
+    category: "AI",
+  },
+  {
+    slug: "ai-code-review",
+    author: "Balqis Putri Muharda",
+    date: "19 May 2025",
+    title: "Teman Dalam Saku: Aplikasi Kesehatan Mental untuk Mahasiswa",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat, quisquam, officia ad esse inventore a voluptatibus dignissimos nulla similique optio ut dolor molestias provident impedit odio deserunt commodi incidunt excepturi natus odit aut minus vel. Dolorem error libero recusandae deleniti explicabo eveniet voluptatem, in obcaecati dolores iste. Dignissimos, quia.",
+    image: "/kode-untuk-semua.png",
+    authorAvatar: "/manu.png",
+    raised: 9600,
+    goal: 15000,
+    category: "Application ",
   },
   // Tambahin project lain di sini...
 ];
@@ -122,12 +151,12 @@ export default function ProjectsPage() {
                     </div>
                   </div>
                   <div className="mt-2 flex items-center flex-wrap gap-x-2">
-                    <button className="rounded-md bg-blue-600 px-3 py-1 text-xs font-medium text-white hover:bg-blue-700">
+                    <a href="/invest" className="rounded-md bg-blue-600 px-3 py-1 text-xs font-medium text-white hover:bg-blue-700">
                       Invest
-                    </button>
-                    <button className="rounded-md bg-purple-600 px-3 py-1 text-xs font-medium text-white hover:bg-purple-700">
+                    </a>
+                    <a href="/donate" className="rounded-md bg-purple-600 px-3 py-1 text-xs font-medium text-white hover:bg-purple-700">
                       Donate
-                    </button>
+                    </a>
                     <a
                       href="/backgroundProjects"
                       className="text-xs text-gray-300 underline hover:text-white"

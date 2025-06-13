@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const cookieStore = cookies(); 
+  const cookieStore = await cookies(); 
   const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
 
   const formData = await req.formData();
@@ -28,9 +28,6 @@ export async function POST(req: NextRequest) {
 
 
   return NextResponse.redirect(
-    new URL(
-      "https://5353-2a09-bac1-34c0-18-00-da-62.ngrok-free.app",
-      req.url
-    )
+    new URL("https://7450-119-235-221-113.ngrok-free.app/", req.url)
   );
 }

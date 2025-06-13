@@ -14,6 +14,7 @@ import {
 import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
+import Image from "next/image";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -276,7 +277,8 @@ export const BlurImage = ({
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    <img
+    <Image
+    
       className={cn(
         "h-full w-full transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
