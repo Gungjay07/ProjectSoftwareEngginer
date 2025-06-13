@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 import { Sidebar, SidebarBody, SidebarLink } from "../components/ui/sidebar";
 import {
   IconArrowLeft,
