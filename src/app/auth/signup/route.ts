@@ -29,6 +29,6 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.redirect(
-    new URL("http://localhost:3000login", req.url), 302
+    new URL("/login", req.url), 302
   );
 }
