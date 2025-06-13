@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -24,6 +23,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import Link from "next/link"; // For Next.js navigation Link component
+import { NavbarAuth } from "./components/NavbarAuth"; // Import NavbarAuth
 
 // Data for BentoGrid items - best defined outside the component if static
 const Skeleton = () => (
@@ -145,14 +145,7 @@ export default function NavbarDemo() {
             <NavbarLogo />
             <NavItems items={navItems} />
             <div className="flex items-center gap-4">
-              <NavbarButton href="/login" variant="secondary">
-                Login
-              </NavbarButton>
-              <NavbarButton href="/book-a-call" variant="primary">
-                {" "}
-                {/* Added href to Book a call */}
-                Book a call
-              </NavbarButton>
+              <NavbarAuth /> {/* Replace login/signup buttons with NavbarAuth */}
             </div>
           </NavBody>
 
@@ -180,22 +173,7 @@ export default function NavbarDemo() {
                 </a>
               ))}
               <div className="flex w-full flex-col gap-4">
-                <NavbarButton
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  variant="primary"
-                  className="w-full"
-                  href="/login" // Added href
-                >
-                  Login
-                </NavbarButton>
-                <NavbarButton
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  variant="primary"
-                  className="w-full"
-                  href="/book-a-call" // Added href
-                >
-                  Book a call
-                </NavbarButton>
+                <NavbarAuth /> {/* Replace login/signup buttons with NavbarAuth in mobile */}
               </div>
             </MobileNavMenu>
           </MobileNav>
@@ -315,69 +293,3 @@ export default function NavbarDemo() {
     </div>
   );
 }
-const DummyContent = () => {
-  return (
-    <img
-      src="/projectFrill.png"
-      alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-full w-[90%] absolute bottom-0 inset-x-0 mx-auto rounded-xl" /* Adjusted image height and positioning */
-    />
-  );
-};
-
-const tabs = [
-  {
-    title: "Product",
-    value: "product",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 flex items-center justify-center">
-        {" "}
-        {/* Added flex positioning for content */}
-        <p className="z-10 relative">Product Tab</p> {/* Added z-10 to text */}
-        <DummyContent />
-      </div>
-    ),
-  },
-  {
-    title: "Services",
-    value: "services",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 flex items-center justify-center">
-        <p className="z-10 relative">Services tab</p>
-        <DummyContent />
-      </div>
-    ),
-  },
-  {
-    title: "Playground",
-    value: "playground",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 flex items-center justify-center">
-        <p className="z-10 relative">Playground tab</p>
-        <DummyContent />
-      </div>
-    ),
-  },
-  {
-    title: "Content",
-    value: "content",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 flex items-center justify-center">
-        <p className="z-10 relative">Content tab</p>
-        <DummyContent />
-      </div>
-    ),
-  },
-  {
-    title: "Random",
-    value: "random",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900 flex items-center justify-center">
-        <p className="z-10 relative">Random tab</p>
-        <DummyContent />
-      </div>
-    ),
-  },
-];
