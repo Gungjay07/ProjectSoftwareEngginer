@@ -80,15 +80,15 @@ export default function NavbarDemo() {
   const navItems = [
     {
       name: "Features",
-      link: "#features",
+      link: "features",
     },
     {
       name: "Pricing",
-      link: "#pricing",
+      link: "pricing",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "contact",
     },
   ];
 
@@ -144,7 +144,7 @@ export default function NavbarDemo() {
           <NavBody>
             <NavbarLogo />
             <NavItems items={navItems} />
-            <div className="flex items-center gap-4">
+            <div className="relative z-[70] flex items-center gap-4 ml-auto">
               <NavbarAuth /> {/* Replace login/signup buttons with NavbarAuth */}
             </div>
           </NavBody>
