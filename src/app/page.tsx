@@ -8,6 +8,7 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
+  NavbarUserProfile,
 } from "./components/ui/resizable-navbar";
 import { useState } from "react";
 import { Carousel, Card } from "./components/ui/apple-cards-carousel"; 
@@ -145,7 +146,7 @@ export default function NavbarDemo() {
             <NavbarLogo />
             <NavItems items={navItems} />
             <div className="relative z-[70] flex items-center gap-4 ml-auto">
-              <NavbarAuth /> {/* Replace login/signup buttons with NavbarAuth */}
+              <NavbarUserProfile /> {/* Use the new integrated user profile component */}
             </div>
           </NavBody>
 
