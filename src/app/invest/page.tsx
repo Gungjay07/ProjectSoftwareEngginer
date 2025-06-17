@@ -21,9 +21,9 @@ export default function InvestPage() {
           />
         </label>
 
-        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+        <Link href="/termsAndcondition" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
           Invest Now
-        </button>
+        </Link>
 
         <Link
           href="/projects"

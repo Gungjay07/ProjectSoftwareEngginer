@@ -95,18 +95,28 @@ const AboutUs = () => {
           {[
             {
               name: "Agung Praditya",
-              role: "Founder & Developer Advocate",
-              image: "https://i.pravatar.cc/150?img=32",
+              role: "Lead Developer",
+              image: "/gungjay.jpg",
             },
             {
-              name: "Team Member",
-              role: "Role",
-              image: "https://i.pravatar.cc/150?img=45",
+              name: "Frillian Su",
+              role: "UI/UX Designer",
+              image: "/frilian.jpeg",
             },
             {
-              name: "Coming Soon",
-              role: "New Role",
-              image: "https://i.pravatar.cc/150?img=12",
+              name: "Yazid Maulana Rizky",
+              role: " Frontend/Backend Developer",
+              image: "/yazid.jpeg",
+            },
+            {
+              name: "Balqis Putri Muharda",
+              role: "Product Owner & Scrum Master ",
+              image: "/balqis.jpeg",
+            },
+            {
+              name: "Alliya Fany Azelia",
+              role: "Business Analyst / Product Owner Support",
+              image: "/aliya.jpeg",
             },
           ].map((member, idx) => (
             <div
